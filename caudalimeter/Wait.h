@@ -7,8 +7,8 @@ public:
   const bool done();
 
 private:
-  unsigned int _waitTimeInmillis;
-  unsigned long _lastTimestamp;
+  unsigned int _waitTimeForLoopInmillis;
+  unsigned long _lastLoopTimestamp;
 };
 
 #endif
