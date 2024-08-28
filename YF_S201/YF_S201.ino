@@ -1,9 +1,9 @@
 const byte sensorPin = 2;
 volatile int count = 0;
 
-void incrementCounter ()  {
+void incrementCounter() {
   count++;
-} 
+}
 
 void setup() {
   Serial.begin(9600);
@@ -19,19 +19,8 @@ void setup() {
 }
 
 void loop() {
-  // float flowInMlperMin;
+  delay(1000);
 
-  // count = 0;
-
-  interrupts();
-  // delay (10000);
-  delay (1000);
-  noInterrupts(); 
-  
-  // flowInMlperMin = count * 500/1000;
-  
   Serial.print(count, DEC);
   Serial.println(" vueltas ");
-  // Serial.print(flowInMlperMin, DEC);
-  // Serial.println(" ml/min");
 }
